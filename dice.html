@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice task</title>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <button
+      onclick="
+    var rn=Math.random()
+    console.log(rn)
+    var dicevalue=''
+    if(rn<=0.16){
+      dicevalue=1
+      document.querySelector('h1').innerText=dicevalue
+    }
+    else if(rn>0.16&&rn<=0.34){
+      dicevalue=2
+      document.querySelector('h1').innerText=dicevalue
+    }
+    else if(rn>0.34&&rn<=0.51){
+      dicevalue=3
+      document.querySelector('h1').innerText=dicevalue
+    }  else if(rn>0.51&&rn<=0.66){
+      dicevalue=4
+      document.querySelector('h1').innerText=dicevalue
+    }  else if(rn>0.66&&rn<=0.83){
+      dicevalue=5
+      document.querySelector('h1').innerText=dicevalue
+    }
+    else if(rn>0.83&&rn<=0.99){
+      dicevalue=6
+      document.querySelector('h1').innerText=dicevalue
+    }"
+    >
+      Dice
+    </button>
+    <script></script>
+  </body>
+</html>
